@@ -20,6 +20,5 @@ public class Pot {
             sum += Math.pow(nums[i], pows[i]);
         }
         System.out.println(sum);
-
     }
 }
