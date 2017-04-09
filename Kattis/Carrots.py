@@ -1,5 +1,3 @@
-import sys
-
 line = input()
 data = line.split()
 num = int(data[1])
