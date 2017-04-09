@@ -1,6 +1,4 @@
-import sys
-
-n = int(sys.stdin.readline())
+n = int(input())
 n += 1
 
 for k in range(1, n):
