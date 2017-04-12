@@ -19,6 +19,8 @@ func main() {
 	for i := 0; i < lawnNo; i++ {
 		fmt.Scanln(&in)
 		wh := strings.Split(in, " ")
+		fmt.Println(wh[0])
+		fmt.Println(wh[1]) //Test also throwing exception
 		w, _ := strconv.ParseFloat(wh[0], 64)
 		h, _ := strconv.ParseFloat(wh[1], 64) //EXCEPTIONAL LINE, index out of range
 
