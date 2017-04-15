@@ -3,13 +3,12 @@ package main
 import (
 	"fmt"
 	"strconv"
-	"strings"
 )
 
 func main() {
 	var seedCost float64
 	var lawnNo int
-	var in string
+	var in, in1 string
 	var area float64
 
 	fmt.Scanln(&seedCost)
@@ -17,17 +16,15 @@ func main() {
 	lawnCost := 0.00
 
 	for i := 0; i < lawnNo; i++ {
-		fmt.Scanln(&in)
-		wh := strings.Split(in, " ")
-		fmt.Println(wh[0])
-		fmt.Println(wh[1]) //Test also throwing exception
-		w, _ := strconv.ParseFloat(wh[0], 64)
-		h, _ := strconv.ParseFloat(wh[1], 64) //EXCEPTIONAL LINE, index out of range
+		fmt.Scanln(&in, &in1)
+
+		w, _ := strconv.ParseFloat(in, 64)
+		h, _ := strconv.ParseFloat(in1, 64)
 
 		area = w * h
 		lawnCost += area * seedCost
 	}
 
-	ans := strconv.FormatFloat(lawnCost, 'E', 8, 64)
+	ans := strconv.FormatFloat(lawnCost, 'f', 7, 64)
 	fmt.Println(ans)
 }
