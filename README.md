@@ -9,7 +9,7 @@ Code is submitted, executed serverside and automatically graded.
 * Global, Country and University leaderboards
 * Technical screens for jobs using their automated system
 
-##Future plans:
+## Future plans:
 * CS50
 * Project Euler Solutions
 * Algorithm implementations
